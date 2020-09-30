@@ -1,0 +1,36 @@
+.container{
+    float: left;
+    width: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 8px black;
+    padding: 10px;
+    overflow: auto;
+    margin: 20px;
+}
+
+.container .title{
+    font-weight: bold;
+    font-size: 28px;
+    color: dimgray;
+}
+
+.container .btn-hapus{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: dodgerblue;
+}
+
+.container .btn-update{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: firebrick;
+    margin-left: 15px;
+}
+
+.container .btn-hapus:hover{
+    cursor: pointer;
+}

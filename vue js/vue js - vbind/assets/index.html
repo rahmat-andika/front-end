@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- v-bind -->
+        <img v-bind:src='imgFile' width="400">
+        <p v-bind:style='styleFont'>About Pages</p>
+
+        <!-- v-on:click & @click -->
+        <button v-on:click="message = 'klik dengan v-on:click'">click me</button>
+        <button @click="message = 'klik dengan @click'">click me</button>
+        <button @click="showAlert">click me</button>
+        <br>
+        <p>{{ message }}</p>
+
+        <!-- v-on:keyup.enter -->
+        <label for="">press enter key</label>
+        <input type="text" v-on:keyup.enter="message2 = 'keyup enter'">
+        <br>
+        <label for="">press any key</label>
+        <input type="text" @keyup.esc="escKey" @keyup.space="spaceKey">
+
+        <p>{{ message2 }}</p>
+    </div>
+
+<script src="../assets/vendor/vue.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

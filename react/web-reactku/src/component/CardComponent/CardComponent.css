@@ -1,0 +1,18 @@
+body{
+    background-color: brown;
+}
+
+.container{
+    float: left;
+    margin-right: 30px;
+    height: 260px;
+    width: 260px;
+    background-color:white;
+    padding: 2px 2px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px black;
+}
+
+.content{
+    text-align: center;
+}

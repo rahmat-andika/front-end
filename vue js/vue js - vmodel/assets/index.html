@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" v-model='message'>
+        <br><br>
+        {{ message }}
+        <br><br>
+        <textarea cols="30" rows="10" v-model='textarea'></textarea>
+        <br><br>
+        <p style="white-space: pre-line;">{{ textarea }}</p>
+        <br><br>
+        <input type="radio" v-model='radiobutton' value='option 1'>option 1
+        <br>
+        <input type="radio" v-model='radiobutton' value='option 2'>option 2
+        <br><br>
+        <p>your choice is {{ radiobutton }}</p>
+        <br>
+        <label for="traveling">traveling</label>
+        <input type="checkbox" id="traveling" value="traveling" v-model='checkbox'>
+        <br>
+        <label for="traveling">makan</label>
+        <input type="checkbox" id="makan" value="makan" v-model='checkbox'>
+        <br>
+        <label for="traveling">minum</label>
+        <input type="checkbox" id="minum" value="minum" v-model='checkbox'>
+        <br>
+        <p>my hobbies are : {{ checkbox }}</p>
+        <ul>
+            <!-- perulangan menggunakan v-for -->
+            <li v-for='choice in checkbox'>{{ choice }}</li>
+        </ul>
+        <br>
+        <p>choice your programing language</p>
+        <br>
+        <select v-model='select'>
+            <option value="" disabled>chose 1</option>
+            <option value="javascript">javascript</option>
+            <option value="c++">C++</option>
+            <option value="c#">C#</option>
+        </select>
+        <p>your skill is {{ select }}</p>
+    </div>
+
+<script src="../assets/vendor/vue.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

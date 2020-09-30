@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <p v-if='show'>{{ message }}</p>
+        <p v-else='show'>{{ message2 }}</p>
+        <p>result from {{ int1 }} + {{ int2 }} is {{ result }}</p>
+        <button v-on:click='sumProces(2)'>proces</button>
+        <input type="text" v-model='kilometers'>
+        <input type="text" v-model='meters'>
+    </div>
+
+<script src="../assets/vendor/vue.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
